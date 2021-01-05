@@ -13,22 +13,24 @@ use Game\Controllers\ZombieController;
 
 
 $fight = new BattleController(...[
-        new ZombieController(1),
-        new ZombieController(2),
-        new ZombieController(3),
-        new ZombieController(4),
-        new ZombieController(5),
-        new ZombieController(6),
-        new ZombieController(7),
-        new HighlanderController(8),
-        new SauronController(9),
-        new WizardController(10),
-        new WizardController(11),
-        new WizardController(12),
-        new HumanController(13),
-        new HumanController(14),
-        new HumanController(15),
-        new HumanController(16),
-        new HumanController(17),
+        new ZombieController('Jean'),
+        new ZombieController('Paul'),
+        new ZombieController('Gauthier'),
+        new ZombieController('Ilies'),
+        new ZombieController('Frederic'),
+        new ZombieController('Willy'),
+        new ZombieController('Ivan'),
+        new HighlanderController('Sarah'),
+        new SauronController('Toufik'),
+        new WizardController('Alexandre'),
+        new WizardController('Cyrille'),
+        new WizardController('Etienne'),
+        new HumanController('Sefyu'),
+        new HumanController('Safae'),
+        new HumanController('Fanina'),
+        new HumanController('Cheick'),
+        new HumanController('Islem'),
     ]
 );
+
+$fight->fight();

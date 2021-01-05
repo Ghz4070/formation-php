@@ -64,6 +64,22 @@ Objectif : Créer une battle avec des personnages
 - vérifier que le damage qui va être appliqué n'est pas supérieur à la vie actuelle du personnage
 - si supérieur, retourner une exception qui indique qu'il est mort
 
+8/ Pour Battle
+
+- créer un paramètre contenant les personnages encore en vie
+- regrouper les personnages par groupe
+- appeler le méthode fight sur index.php
+- lister les joueurs qui sont dans l'arène
+- lancer le jeu (donc méthode pour lancer le jeu)
+- lancement du jeu
+- vérifier que les groupes ont encore des survivants
+
+9/ Bataille finale
+
+- Faire une boucle sur les players d'un même groupe dans round
+- un player attaque un autre player aléatoirement (mais pas lui même)
+- take damage pour diminuer la vie
+- A la fin de la bataille lister les vainqueurs de chaque groupe
 ----
 
 Lancer le jeu

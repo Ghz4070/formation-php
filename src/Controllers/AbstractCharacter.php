@@ -6,20 +6,21 @@ namespace Game\Controllers;
 
 use Game\Interfaces\FighterInterface;
 use Game\Interfaces\LivingInterface;
+use Game\Interfaces\OpponentInterface;
 use Game\Interfaces\PlayerInterface;
 
-abstract class AbstractCharacter implements PlayerInterface, LivingInterface, FighterInterface
+abstract class AbstractCharacter implements PlayerInterface, LivingInterface, FighterInterface, OpponentInterface
 {
     protected $health;
     protected $damage;
     protected $force;
     protected $name;
 
-    public function __construct($id)
+    public function __construct(string $id)
     {
-        $this->health = rand(50, 100);
-        $this->damage = rand(20, 40);
-        $this->force = rand(1, 5);
+        $this->health = rand(40, 500);
+        $this->damage = rand(0, 20);
+        $this->force = rand(1, 3);
         $this->name = $id;
     }
 
