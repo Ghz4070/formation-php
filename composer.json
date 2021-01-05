@@ -1,0 +1,16 @@
+{
+  "name": "cours/battle",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ghezal Ilies"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Game\\": "src/"
+    }
+  }
+}
